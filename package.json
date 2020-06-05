@@ -1,25 +1,25 @@
 {
-  "name": "cicd-github-actions-ecr",
+  "name": "docker-on-terraform",
   "version": "1.0.0",
-  "description": "A simple demonstration of setting up CI/CD pipelines using Github Actions and AWS Elastic Container Registry Service",
+  "description": "A hello world project demonstrating use of Docker service with Terraform.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ashutoshkarna03/cicd-github-actions-ecr.git"
+    "url": "git+https://github.com/ashutoshkarna03/docker-on-terraform.git"
   },
   "keywords": [
-    "ecr"
+    "terraform",
+    "docker"
   ],
   "author": "Ashutosh Karna",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ashutoshkarna03/cicd-github-actions-ecr/issues"
+    "url": "https://github.com/ashutoshkarna03/docker-on-terraform/issues"
   },
-  "homepage": "https://github.com/ashutoshkarna03/cicd-github-actions-ecr#readme",
+  "homepage": "https://github.com/ashutoshkarna03/docker-on-terraform#readme",
   "dependencies": {
     "express": "^4.17.1"
   }

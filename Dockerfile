@@ -1,15 +1,19 @@
 FROM node:10
 
-# Create app directory
-WORKDIR /usr/src/app
+RUN mkdir /myapp
 
-COPY package*.json ./
+# Create app directory
+WORKDIR /myapp
+
+COPY ./package.json /myapp/package.json
+COPY ./package-lock.json /myapp/package-lock.json
 
 RUN npm install
+RUN npm install -g nodemon
 
 # Bundle app source
-COPY . .
+COPY . /myapp
 
 EXPOSE 8080
 
-CMD [ "node", "app.js" ]
+CMD [ "nodemon", "app.js" ]
