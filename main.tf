@@ -4,7 +4,7 @@ resource "docker_container" "hello_world_app" {
   restart = "always"
   volumes {
     container_path  = "/myapp"
-    host_path = "/Users/uxcam/Projects/learning/docker-on-terraform" 
+    host_path = "/path/to/your/project/directory" 
     read_only = false
   }
   ports {
